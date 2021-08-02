@@ -33,83 +33,187 @@
 </head>
 
 <body>
+    <div class="sidebar">
+        <div class="logo">
 
-    <!-- Top Navbar section -->
-    <section id="main">
-        <!-- Navbar code -->
-        <nav>
-            <!-- Logo -->
-            <a class="logo-link" href="#">
-                <h1 class="logo">A.Q</h1>
-            </a>
+            <h1>A.Q</h1>
 
-            <!-- Hamburger for responsiveness -->
-            <input type="checkbox" class="hamburger">
-            <label class="menu-btn" for="menu-btn">
-                <span class="hamburger-icon"></span>
-            </label>
 
-            <!-- Menu -->
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#aboutme">About</a></li>
-                <li><a href="#my-projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </section>
+            <div class="menu">
+                <br><br>
+                <ul>
+                    <li style="visibility: hidden;"><a href="#"></a></li>
+                    <li class="active" id="home">
+                        <i class="fas fa-home"></i>
+                        <a href="#">Home</a>
+                    </li>
 
-    <!-- for social media icons -->
-    <section id="navbar-left">
-        <!--  -->
-    </section>
+                    <li id="about">
+                        <i class="fas fa-user"></i>
+                        <a href="#about">About</a>
+                    </li>
 
-    <!-- Landing page section (Value prop section)-->
-    <div class="content">
-        <!-- main section code -->
+                    <li id="skills">
+                        <i class="fas fa-briefcase"></i>
+                        <a href="#skills">Skills</a>
+                    </li>
+
+                    <li id="projects">
+                        <i class="fas fa-laptop-code"></i>
+                        <a href="#projects">Projects</a>
+                    </li>
+
+                    <li id="contact">
+                        <i class="fas fa-phone-square-alt"></i>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
+    <div class="main">
 
-    <!-- AboutMe section -->
-    <section id="aboutme">
-        <!-- About me code here -->
-    </section>
+        <div class="section-1">
+            <div class="col-div-6">
+                <h2 class="head"><span style="color: #ff042c;">Alwaz</span><br>Qazi</h2>
+                <br>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ullam tenetur
+                    praesentium,
+                    voluptatem nulla fuga nostrum sint eius numquam.</p>
+            </div>
 
-    <!-- Skills section -->
-    <section id="skills">
-        <!-- skills section code here -->
-    </section>
+            <!-- bg animations -->
+            <div class="col-div-6">
+                <span class="shape-square"></span>
+                <span class="shape-trangle"></span>
+                <div class="slider-img">
+                    <img src="./images/profile.svg" alt="">
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="section-2">
+            <div class="col-div-6">
+                <div class="content">
+                    <div class="col">
+                        <div class="box-1" style="margin-top: 50%;">
+                            <i class="fas fa-code"></i>
+                            <p>UI ? UX Design</p>
+                            <p>Lorem ipsum dolor sit amet elit.</p>
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="box-1">
+                            <i class="fab fa-codepen"></i>
+                            <p>Developement</p>
+                            <p>Lorem ipsum dolor </p>
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </div>
+
+                        <div class="box-1">
+                            <i class="fas fa-desktop"></i>
+                            <p>App Design</p>
+                            <p>Lorem ipsum dolor sit amet cons</p>
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </div>
 
 
-    <!-- Experience section -->
-    <section id="experience">
-        <!-- Experience section code here -->
-    </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-div-6">
+                <p class="about-p">Basic Info about Company</p>
+                <p class="about-p1">Digital Creator & Strategists</p>
+                <p class="about-p2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque odio deserunt,
+                    ratione est quaerat, molestiae adipisci repudiandae, rem ipsum nihil iste mollitia inventore sed
+                    qui? Consectetur bla nditiis possimus laborum placeat,
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolor
+                    cupiditate nam,quo unde nostrum. Sequi eaque aut laboriosam expedita illum excepturi quis quia
+                    suscipit dolor natus, assumenda magni. Animi.
+                </p>
+            </div>
+            <div class="clearfix"></div>
 
 
-    <!-- My Projects -->
-    <section id="my-projects">
-        <!-- my project code here -->
-    </section>
+            <div class="section-3">
+                <div class="col-div-6">
+                    <div class="content-1">
+                        <p class="about-p">Skills</p>
+                        <p class="progress-p">HTML <span>90%</span></p>
+                        <div id="progress"></div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <!-- contact section code here -->
-        <!-- Contact details and Conrtact form -->
-    </section>
+                        <p class="progress-p2">CSS <span>80%</span></p>
+                        <div id="progress2"></div>
 
-
-    <!-- Footer section -->
-    <footer>
-        <!-- footer section here -->
-    </footer>
-
-
-
+                        <p class="progress-p3">JavaScript <span>60%</span></p>
+                        <div id="progress3"></div>
+                    </div>
+                </div>
+                <div class="col-div-6"></div>
+                <div class="clearfix"></div>
+            </div>
 
 
+            <!-- project section -->
+            <div class="section-4">
+
+                <div class="col-div-12">
+                    <br>
+                    <div class="p-box">
+                        <img src="" alt="">
+                    </div>
+
+                    <div class="p-box">
+                        <img src="" alt="">
+                    </div>
+
+                    <div class="p-box">
+                        <img src="" alt="">
+                    </div>
+                    <div class="p-box">
+                        <img src="" alt="">
+                    </div>
+                    <div class="p-box">
+                        <img src="" alt="">
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <!-- Contact form -->
+            <div class="section-5">
+                <div class="col-div-6">
+                    <div class="content-1">
+                        <p class="about-p">Have any Project ?</p>
+                        <p class="about-p1">Hire Me</p>
+
+                        <form>
+                            <input type="text" class="input-1" placeholder="Name">
+                            <input type="email" class="input-2" placeholder="Email">
+                            <textarea placeholder="Message"></textarea>
+                            <input type="button">Send Message
+                        </form>
+                    </div>
+                </div>
+                <div class="col-div-6"></div>
+                <div class="clearfix"></div>
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
 
 
 
