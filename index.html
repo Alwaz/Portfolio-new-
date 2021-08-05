@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porttfolio ALwaz Qazi</title>
+    <title>Portfolio Alwaz Qazi</title>
 
     <!-- Google Fonts -->
 
@@ -33,187 +33,311 @@
 </head>
 
 <body>
-    <div class="sidebar">
-        <div class="logo">
 
-            <h1>A.Q</h1>
+    <!-- Top Navbar section -->
+    <section id="main">
+        <!-- Navbar code -->
+        <nav>
+            <!-- Logo -->
+            <a class="logo-link" href="#">
+                <h1 class="logo">A.Q</h1>
+            </a>
+
+            <!-- Hamburger for responsiveness -->
+            <input type="checkbox" class="hamburger">
+            <label class="menu-btn" for="menu-btn">
+                <span class="hamburger-icon"></span>
+            </label>
 
 
-            <div class="menu">
-                <br><br>
+            <!-- Menu -->
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#aboutme-container">About</a></li>
+                <li><a href="#my-projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact-me">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+
+
+    <!-- Landing page section (Value prop section)-->
+    <div class="content">
+        <!-- main section code -->
+        <!-- left div -->
+        <div class="intro">
+            <h1 class="intro_content">Hi, I'm Alwaz</h1>
+            <p class="description">Programmer, Web Developer, Open Source Contributer & Technical blogger.</p>
+
+            <div class="social-icons-container">
+                <div class="social-icons">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/Alwaz">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://alwazkazi3.medium.com/">
+                                <i class="fab fa-medium-m"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/alwaz-qazi-485a091b8/">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:alwazkazi3@gmail.com">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <a href="#contact" class="hireme-btn">Hire Me</a>
+        </div>
+
+        <!-- right div -->
+        <div class="img">
+            <img class="image" src="./images/undraw_web_devices_ad58.svg" alt="mypic">
+        </div>
+
+
+
+    </div>
+
+
+    <!-- AboutMe section -->
+    <section id="aboutme-container">
+        <!-- About me code here -->
+        <!-- left div -->
+        <div class="aboutme-heading">
+            <h1 class="intro_content">About me</h1>
+        </div>
+        <!-- right div -->
+
+        <div class="my-desc">
+            <p class="description">Web Developer who aims to craft your desired websites to
+                reality leaving you contended for real.
+                I have a diverse set of skills ranging from design,
+                to HTML,CSS, JavaScript, React all the way to Python.
+                I like contributing to Open Source Projects as
+                well.</p>
+        </div>
+
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills">
+
+        <div class="skill-text">
+            <h1>Skills</h1>
+        </div>
+        <div class="row">
+            <div class="skill-box">
+                <i class="fas fa-laptop-code"></i>
+                <div class="skill-name">
+                    <h3>Front-end</h3>
+                </div>
+
                 <ul>
-                    <li style="visibility: hidden;"><a href="#"></a></li>
-                    <li class="active" id="home">
-                        <i class="fas fa-home"></i>
-                        <a href="#">Home</a>
-                    </li>
+                    <li>html(5)</li>
+                    <li>css(3)</li>
+                    <li>Javascript(ES6)</li>
+                    <li>Bootstrap</li>
+                    <li>React</li>
+                    <li>Material-UI</li>
+                </ul>
+            </div>
+            <div class="skill-box">
+                <i class="fas fa-server"></i>
+                <div class="skill-name">
+                    <h3>Back-end</h3>
+                </div>
 
-                    <li id="about">
-                        <i class="fas fa-user"></i>
-                        <a href="#about">About</a>
-                    </li>
+                <ul>
+                    <li>NodeJS</li>
+                    <li>NPM</li>
+                    <li>Express</li>
+                    <li>Mongo</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="skill-box">
+                <i class="fas fa-star"></i>
+                <div class="skill-name">
+                    <h3>Tools</h3>
+                </div>
 
-                    <li id="skills">
-                        <i class="fas fa-briefcase"></i>
-                        <a href="#skills">Skills</a>
-                    </li>
-
-                    <li id="projects">
-                        <i class="fas fa-laptop-code"></i>
-                        <a href="#projects">Projects</a>
-                    </li>
-
-                    <li id="contact">
-                        <i class="fas fa-phone-square-alt"></i>
-                        <a href="#contact">Contact</a>
-                    </li>
+                <ul>
+                    <li>Visual Studio || PyCharm</li>
+                    <li>Browser</li>
+                    <li>Git & Github</li>
                 </ul>
             </div>
         </div>
-    </div>
 
-    <div class="main">
+    </section>
 
-        <div class="section-1">
-            <div class="col-div-6">
-                <h2 class="head"><span style="color: #ff042c;">Alwaz</span><br>Qazi</h2>
-                <br>
-                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ullam tenetur
-                    praesentium,
-                    voluptatem nulla fuga nostrum sint eius numquam.</p>
-            </div>
-
-            <!-- bg animations -->
-            <div class="col-div-6">
-                <span class="shape-square"></span>
-                <span class="shape-trangle"></span>
-                <div class="slider-img">
-                    <img src="./images/profile.svg" alt="">
-                </div>
-            </div>
-            <div class="clearfix"></div>
+    <!-- My Projects -->
+    <section id="my-projects">
+        <!-- my project code here -->
+        <div class="project-text">
+            <h1>Projects</h1>
         </div>
 
-        <div class="section-2">
-            <div class="col-div-6">
-                <div class="content">
-                    <div class="col">
-                        <div class="box-1" style="margin-top: 50%;">
-                            <i class="fas fa-code"></i>
-                            <p>UI ? UX Design</p>
-                            <p>Lorem ipsum dolor sit amet elit.</p>
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="box-1">
-                            <i class="fab fa-codepen"></i>
-                            <p>Developement</p>
-                            <p>Lorem ipsum dolor </p>
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </div>
-
-                        <div class="box-1">
-                            <i class="fas fa-desktop"></i>
-                            <p>App Design</p>
-                            <p>Lorem ipsum dolor sit amet cons</p>
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-div-6">
-                <p class="about-p">Basic Info about Company</p>
-                <p class="about-p1">Digital Creator & Strategists</p>
-                <p class="about-p2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque odio deserunt,
-                    ratione est quaerat, molestiae adipisci repudiandae, rem ipsum nihil iste mollitia inventore sed
-                    qui? Consectetur bla nditiis possimus laborum placeat,
-                    <br><br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolor
-                    cupiditate nam,quo unde nostrum. Sequi eaque aut laboriosam expedita illum excepturi quis quia
-                    suscipit dolor natus, assumenda magni. Animi.
+        <!--Project container -->
+        <div class="project-container">
+            <!-- left div- project description-->
+            <div class="project-details">
+                <h3 class="project-name">Job Search Application</h3>
+                <p class="project-description">Job Searching web
+                    application build using HTML,CSS
+                    and Javascript that filter jobs
+                    based on user search.
                 </p>
+                <a href="https://jsjobsearching.netlify.app/" class="hireme-btn">View Demo</a>
             </div>
-            <div class="clearfix"></div>
+            <!-- right div-project img -->
+            <div class="project-img">
+                <img src="./images/project1.png" alt="Job Search application">
+            </div>
+        </div>
 
 
-            <div class="section-3">
-                <div class="col-div-6">
-                    <div class="content-1">
-                        <p class="about-p">Skills</p>
-                        <p class="progress-p">HTML <span>90%</span></p>
-                        <div id="progress"></div>
+        <!-- Project container1 -->
+        <div class="project-container">
 
-                        <p class="progress-p2">CSS <span>80%</span></p>
-                        <div id="progress2"></div>
-
-                        <p class="progress-p3">JavaScript <span>60%</span></p>
-                        <div id="progress3"></div>
-                    </div>
-                </div>
-                <div class="col-div-6"></div>
-                <div class="clearfix"></div>
+            <!-- right div-project img -->
+            <div class="project-img">
+                <img src="./images/project2.png" alt="Job Search application">
             </div>
 
+            <!-- left div- project description-->
+            <div class="project-details1">
 
-            <!-- project section -->
-            <div class="section-4">
+                <h3 class="project-name">NETFLIX CLONE</h3>
+                <p class="project-description">Fully responsive Netflix Clone using react, redux and firebase
+                    authentication.
+                </p>
+                <a href="https://github.com/Alwaz/netflix-clone.git" class="hireme-btn">Source Code</a>
+            </div>
+        </div>
 
-                <div class="col-div-12">
-                    <br>
-                    <div class="p-box">
-                        <img src="" alt="">
+
+
+        <!-- Project container 2 -->
+        <div class="project-container">
+            <!-- left div- project description-->
+            <div class="project-details">
+                <h3 class="project-name">DISNEY CLONE</h3>
+                <p class="project-description">Fully responsive Disney Clone with firebase authentication build using
+                    React, redux, Styled Components
+                </p>
+                <a href="https://github.com/Alwaz/Disney-Clone.git" class="hireme-btn">Source Code</a>
+            </div>
+            <!-- right div-project img -->
+            <div class="project-img">
+                <img src="./images/project3.png" alt="Job Search application">
+            </div>
+        </div>
+
+
+    </section>
+    <!-- Project section ends here -->
+
+
+
+
+    <!-- Contact me section -->
+    <section id="contact-me">
+        <!-- contact me section code here -->
+        <h1>Have Any Projects in Mind ?</h1>
+        <a href="#contact" class="hireme-btn">Contact Me</a>
+
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <!-- contact section code here -->
+
+        <!-- Contact details -->
+        <div class="container">
+            <div class="contact-info">
+                <div class="box">
+                    <div class="icon">
+                        <a href="https://www.linkedin.com/in/alwaz-qazi-485a091b8/">
+                            <i class="fab fa-linkedin"></i></a>
                     </div>
 
-                    <div class="p-box">
-                        <img src="" alt="">
-                    </div>
-
-                    <div class="p-box">
-                        <img src="" alt="">
-                    </div>
-                    <div class="p-box">
-                        <img src="" alt="">
-                    </div>
-                    <div class="p-box">
-                        <img src="" alt="">
+                    <div class="text">
+                        <p>LinkedIn</p>
                     </div>
                 </div>
 
-                <div class="clearfix"></div>
+
+                <div class="box">
+                    <div class="icon">
+                        <a href="alwazkazi3@gmail.com">
+                            <i class="far fa-envelope"></i></a>
+                    </div>
+                    <div class="text">
+                        <p>alwazkazi3@gmail.com</p>
+                    </div>
+                </div>
             </div>
 
             <!-- Contact form -->
-            <div class="section-5">
-                <div class="col-div-6">
-                    <div class="content-1">
-                        <p class="about-p">Have any Project ?</p>
-                        <p class="about-p1">Hire Me</p>
 
-                        <form>
-                            <input type="text" class="input-1" placeholder="Name">
-                            <input type="email" class="input-2" placeholder="Email">
-                            <textarea placeholder="Message"></textarea>
-                            <input type="button">Send Message
-                        </form>
+            <div class="contact-form">
+                <form action="submit">
+                    <h2>Contact Me</h2>
+
+                    <div class="inputBox">
+                        <input type="text" required>
+                        <span>Full Name</span>
                     </div>
-                </div>
-                <div class="col-div-6"></div>
-                <div class="clearfix"></div>
+
+
+                    <div class="inputBox">
+                        <input type="email" required>
+                        <span>Email</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <textarea cols="30" rows="10"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+
+
+                    <div class="inputBox">
+                        <a href="#contact" class="hireme-btn">Send</a>
+                    </div>
+
+
+                </form>
             </div>
-
-
         </div>
+    </section>
+
+
+    <!-- Footer section -->
+    <footer>
+        <p>Alwaz Qazi</p>
+        <p>Copyright 2021 - All rights reserved</p>
+    </footer>
 
 
 
 
-    </div>
+
 
 
 
