@@ -7,10 +7,9 @@
   --main-bg-color: #000000;
   --button-links-color: #8739fa;
   --main-font-color: #f6f6f6;
-  --sub-font-color: #d6d9db;
+  --sub-font-color: #eaecec;
   --links-icon-color: #626164;
   --secondary-bg-color: #252525;
-
   --light-bg-color: #ffffff;
   --dark-bg-color: #171c28;
 }
@@ -32,10 +31,10 @@ nav.dark-mode > a {
 }
 
 #menu-bar {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   cursor: pointer;
   display: none;
-  padding: 0.5rem 1.5rem;
+  padding: 28px 20px;
 }
 
 #menu-bar > .fas {
@@ -79,11 +78,13 @@ header > nav > a {
   font-size: 1.125rem;
   font-family: "Montserrat", sans-serif;
   align-items: center;
-
   justify-content: space-between;
   padding: 15px 30px;
-
   text-decoration: none;
+}
+
+header > nav > a:hover {
+  background: var(--sub-font-color);
 }
 
 /* toggle button stling */
@@ -125,7 +126,7 @@ header > nav > .toggle {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: #ffffff;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -138,7 +139,7 @@ input:focus + .slider {
   box-shadow: 0 0 1px #2196f3;
 }
 
-input:checked + .slider:before {
+input:checked + .slider::before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -152,10 +153,6 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-
-/* Skill section complete */
-
-/* Styling Project section */
 
 /* Responsiveness */
 @media (max-width: 400px) {
@@ -199,7 +196,6 @@ input:checked + .slider:before {
     top: 10%;
     right: -120%;
     width: 100%;
-    background: var(--light-bg-color);
     left: 0;
   }
 }

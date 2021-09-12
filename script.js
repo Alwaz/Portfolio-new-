@@ -16,5 +16,4 @@ menu.addEventListener("click", () => {
 toggle_btn.addEventListener("click", () => {
   element.classList.toggle("dark-mode");
   nav.classList.toggle("dark-mode");
-  icon.classList.toggle("dark-mode");
 });
