@@ -10,7 +10,9 @@
   --sub-font-color: #777779;
   --links-icon-color: #626164;
   --secondary-bg-color: #252525;
+
   --light-bg-color: #ffffff;
+  --dark-bg-color: #171c28;
 }
 
 body {
@@ -18,11 +20,19 @@ body {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  background: var(--light-bg-color);
+}
+
+.dark-mode {
+  background: var(--dark-bg-color);
+}
+
+nav.dark-mode > a {
+  color: var(--light-bg-color);
 }
 
 /* header stling begins */
 header {
-  background-color: var(--light-bg-color);
   max-width: 100%;
   padding: 15px 20px;
   display: flex;
@@ -46,7 +56,7 @@ header .logo {
 }
 
 .grey-color {
-  color: var(--sub-font-color);
+  color: var(--button-links-color);
 }
 
 header > nav {
