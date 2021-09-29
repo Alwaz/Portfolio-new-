@@ -17,3 +17,30 @@ toggle_btn.addEventListener("click", () => {
   element.classList.toggle("dark-mode");
   nav.classList.toggle("dark-mode");
 });
+
+// show alert after 5 sec of window load
+// get the id
+let popUp = document.querySelector("#popup");
+
+// add event lisenter on window load
+window.addEventListener("load", () => {
+  showPopup();
+});
+
+window.addEventListener("click", () => {
+  hidePopup();
+});
+
+// to show popup on window load
+const showPopup = () => {
+  setTimeout(function () {
+    popUp.classList.add("show");
+  }, 5000);
+};
+
+// to hide popup on clicking anwhere on window
+const hidePopup = () => {
+  setTimeout(function () {
+    document.querySelector("#popup").style.display = "none";
+  }, 0.000001);
+};
