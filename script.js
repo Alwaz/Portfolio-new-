@@ -1,6 +1,7 @@
 // toggle b/w dark light mode
 let toggle_btn = document.querySelector(".slider");
 let element = document.body;
+
 let nav = document.querySelector(".navbar");
 
 // responsive menu bar
@@ -35,7 +36,7 @@ window.addEventListener("click", () => {
 const showPopup = () => {
   setTimeout(function () {
     popUp.classList.add("show");
-  }, 5000);
+  }, 2000);
 };
 
 // to hide popup on clicking anwhere on window

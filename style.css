@@ -9,6 +9,9 @@
   --secondary-bg-color: #252525;
   --light-bg-color: #ffffff;
   --dark-bg-color: #171c28;
+
+  /* for identification */
+  --border: 2px solid var(--main-bg-color);
 }
 
 body {
@@ -16,6 +19,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
   background: var(--light-bg-color);
 }
 
@@ -73,7 +77,6 @@ header > nav > a {
   display: flex;
   color: #000;
   font-size: 1.125rem;
-  font-family: "Montserrat", sans-serif;
   align-items: center;
   justify-content: space-between;
   padding: 15px 30px;
@@ -165,9 +168,11 @@ input:checked + .slider::before {
   justify-content: center;
   border-radius: 10px;
   background-color: #8739fa;
-  font-family: "Montserrat", sans-serif;
   box-shadow: 0px 10px 33px 1px rgba(0, 0, 0, 0.41);
   visibility: hidden;
+  opacity: 0;
+  margin-top: 50px;
+  transition: all 1s ease;
 }
 
 .popup_content > h3 {
@@ -178,7 +183,54 @@ input:checked + .slider::before {
 #popup.show {
   visibility: visible;
   opacity: 1;
-  transition: all 1s ease;
+  margin-top: 0;
+}
+
+/* About section stling */
+.about {
+  background: var(--links-icon-color);
+  display: grid;
+  display: flex;
+  justify-content: space-between;
+  grid-template-columns: repeat(2 1fr);
+}
+
+.about_content > h1 {
+  font-size: 3rem;
+}
+
+.about_content > p {
+  color: var(--sub-font-color);
+  font-size: 1.25rem;
+}
+
+.about_content > h1 > span > img {
+  width: 50px;
+}
+
+.about_gif {
+  width: 50%;
+}
+.about_gif > img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.btn {
+  background: var(--button-links-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: var(--main-font-color);
+}
+
+/* [class^="about_"] {
+  border: var(--border);
+} */
+
+.about_content_container {
+  width: 50%;
 }
 
 /* Responsiveness */
@@ -224,5 +276,26 @@ input:checked + .slider::before {
     right: -120%;
     width: 100%;
     left: 0;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about_content_container {
+    width: 90%;
+    height: 50vh;
+  }
+
+  .about_gif {
+    width: 100%;
+  }
+
+  .about_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
