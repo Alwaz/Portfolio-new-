@@ -188,7 +188,6 @@ input:checked + .slider::before {
 
 /* About section stling */
 .about {
-  background: var(--links-icon-color);
   display: grid;
   display: flex;
   justify-content: space-between;
@@ -200,7 +199,7 @@ input:checked + .slider::before {
 }
 
 .about_content > p {
-  color: var(--sub-font-color);
+  color: var(--links-icon-color);
   font-size: 1.25rem;
 }
 
@@ -224,10 +223,6 @@ input:checked + .slider::before {
   border-radius: 5px;
   color: var(--main-font-color);
 }
-
-/* [class^="about_"] {
-  border: var(--border);
-} */
 
 .about_content_container {
   width: 50%;
