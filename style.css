@@ -294,4 +294,19 @@ input:checked + .slider::before {
     justify-content: center;
     align-items: center;
   }
+
+  .experience h1{
+    font-size: 2rem;
+
+  }
+
+
+  .experience_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    width: auto;
+  }
 }
