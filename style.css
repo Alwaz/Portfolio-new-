@@ -228,6 +228,10 @@ input:checked + .slider::before {
   width: 50%;
 }
 
+
+.blog_para {
+  color: var(--links-icon-color);
+}
 /* Responsiveness */
 @media (max-width: 400px) {
 }
@@ -295,7 +299,7 @@ input:checked + .slider::before {
     align-items: center;
   }
 
-  .experience h1{
+  #experience h1{
     font-size: 2rem;
 
   }
